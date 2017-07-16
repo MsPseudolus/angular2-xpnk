@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { GroupMembersService } from './group-members.service';
 import { XpnkGroupTweetsService } from './xpnkgroup-tweets.service';
 import { XpnkGroupInstagramsService } from './xpnkgroup-instagrams.service';
+import { XpnkGroupDisqusionsService } from './xpnkgroup-disqusions.service';
 
 @Component({
   selector:                           'app-root',
@@ -9,7 +10,8 @@ import { XpnkGroupInstagramsService } from './xpnkgroup-instagrams.service';
   styleUrls:                          ['./app.component.css'],
   providers:                          [GroupMembersService, 
   										XpnkGroupTweetsService,
-  										XpnkGroupInstagramsService]
+  										XpnkGroupInstagramsService,
+  										XpnkGroupDisqusionsService]
 })
 export class AppComponent {
   title                               = 'xapnik';
@@ -17,6 +19,7 @@ export class AppComponent {
 
   constructor( private groupMembersService: GroupMembersService, 
   				private xpnkGroupTweetsService: XpnkGroupTweetsService,
-  				private xpnkGroupInstagramsService: XpnkGroupInstagramsService ) { }
+  				private xpnkGroupInstagramsService: XpnkGroupInstagramsService,
+  				private xpnkGroupDisqusionsService: XpnkGroupDisqusionsService ) { }
 }
 

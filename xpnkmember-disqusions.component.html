@@ -1,0 +1,6 @@
+<button (click)="memberDisqusionsFilter()">Disqus</button>
+<div *ngIf="filteredDisqusions$ as filteredDisqusions">
+  <li *ngFor="let filteredDisqusion of filteredDisqusions">
+  {{ filteredDisqusion.DisqusPID }} 
+  </li>
+</div> 
