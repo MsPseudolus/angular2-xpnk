@@ -1,0 +1,6 @@
+<button (click)="memberInstagramsFilter()">Instagrams</button>
+<div *ngIf="filteredInstagrams$ as filteredInstagrams">
+  <li *ngFor="let filteredInstagram of filteredInstagrams">
+  {{ filteredInstagram.InstagramPID }} 
+  </li>
+</div> 

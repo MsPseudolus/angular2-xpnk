@@ -1,0 +1,6 @@
+<button (click)="memberTweetsFilter()">Tweets</button>
+<div *ngIf="filteredTweets$ as filteredTweets">
+  <li *ngFor="let filteredTweet of filteredTweets">
+  {{ filteredTweet.TweetID }} 
+  </li>
+</div> 
